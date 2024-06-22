@@ -18,7 +18,7 @@ function StudList({ studArr, setFavStudArr, favStudArr }) {
             {
                 studArr.map((data, index) => {
                     return <>
-                        <div className="p-2 flex justify-between"><p className="text-2xl flex-grow">{index + 1}. {data}</p><button disabled={favStudArr.includes(data)} onClick={() => handleAddFav(data)} className=" bg-black p-2 disabled:bg-slate-600 text-white rounded-md">Add to Favourites</button></div>
+                        <div className="p-2 flex justify-between items-center gap-3"><p className="text-2xl flex-grow">{index + 1}. {data}</p><button disabled={favStudArr.includes(data)} onClick={() => handleAddFav(data)} className=" bg-black p-2 text-nowrap disabled:bg-slate-600 text-white rounded-md">Add to Favourites</button></div>
                     </>
                 })
             }
